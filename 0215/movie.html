@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <script src="./js/bootstrap.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    $(function(){
+      $.getJSON('./data/movie.json', function(boxoffice){
+        let table = `
+        <table class="table table-striped table-hover">
+          <thead class="table-dark">
+            <caption>영화 Json 출력하기</caption>
+            <tr class = "table-dark">
+              <th>순번</th><th>순위</th><th>영화명</th><th>개봉일</th><th>일일관객수</th><th>누적관객수</th>
+            </tr>
+          </thead>
+          <tbody>
+          `;
+        for(let key in boxoffice.dailyBoxOfficeList){
+          table += `<tr>`;
+            let bo = boxoffice.dailyBoxOfficeList;
+            let date = bo[key].openDt;
+            let audiCnt = bo[key].audiCnt;
+            let audiAcc = bo[key].audiAcc;
+
+            let dateY = date.substr(0, 4);
+            let dateM = date.substr(5, 2);
+            let dateD = date.substr(8, 2);
+
+            if(dateM.substr(0,1) == 0){
+              dateM = dateM.substr(1,1);
+            }
+            if(dateD.substr(0,1) == 0){
+              dateD = dateD.substr(1,1);
+            }
+
+            date = dateY + '년 ' + dateM + '월 ' + dateD + '일';
+            bo[key].openDt = date;
+            audiCnt = audiCnt + '명';
+            audiAcc = audiAcc + '명';
+
+            //숫자 3자리마다 콤마 찍기
+
+            let audiCntComma = audiCnt.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            let audiAccComma = audiAcc.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            bo[key].audiCnt = audiCntComma;
+            bo[key].audiAcc = audiAccComma;
+
+
+          for(let value in bo[key]){
+            table += `<td>${bo[key][value]}</td>`;
+            }
+          table += `</tr>`;
+        }
+        table += `</tbody>`;
+        table += `</table>`;
+        table += `
+
+        <div class="btn-toolbar w-100" role="toolbar">
+          <p class="position-absolute start-0">데이터 출처 : 영화진흥위원회</p>
+          <ul class="form-check mx-auto">
+            <li class="btn btn-primary">1</li>
+            <li class="btn btn-secondary">2</li>
+            <li class="btn btn-secondary">3</li>
+            <li class="btn btn-secondary">4</li>
+            <li class="btn btn-secondary">5</li>
+          </ul>
+          <p class="form-check-reverse position-absolute end-0">
+            <a href="#" title="글쓰기" class="btn btn-primary">글쓰기</a>
+          </p>
+        </div>
+        `;
+        $('#movie_box').html(table);
+
+      })
+    })
+  </script>
+</head>
+<body>
+  <header></header>
+  <h2>API의 JSON을 가져와 데이터 출력하기</h2>
+  <p>영화진흥위원회에서 제공하는 영화 api 데이터를 이용해 json으로 내려 받은 뒤 배열객체를 활용하여 데이터를 출력한다.</p>
+  <p>출력 데이터는 테이블 방식으로 출력을 하며, 부트스트랩의 클래스 서식을 적용하여 꾸민다.</p>
+
+  <article id="movie_box">
+  </article>
+  
+</body>
+</html>

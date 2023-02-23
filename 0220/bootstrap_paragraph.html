@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>부트스트랩 - 글자, 문자 관련</title>
+  <link rel="stylesheet" href="../css/bootstrap.css">
+  <link rel="stylesheet" href="../css/bootstrap-grid.css">
+</head>
+<body>
+  <h2>부트스트랩 - 글자, 문단 관련</h2>
+  <p>
+    부트스트랩에서는 기본 글자크기가 16px이고, 행의 높이는 1.428이다.
+  </p>
+  <p>
+    위 내용은 문단태그 요소에 자동으로 적용되며, 하단 여백은 16px이다.
+  </p>
+
+  <h1>40px</h1>
+  <h2>32px</h2>
+  <h3>28px</h3>
+  <h4>24px</h4>
+  <h5>20px</h5>
+  <h6>16px</h6>
+  <small>작은글자 14px</small> <br>
+  <mark> 글자에 하이라이트 효과를 적용 16px</mark> <br>
+  <abbr title="약자의 줄임말을 사용하고자 할 때 사용">약어</abbr>
+  <blockquote>인용문</blockquote>
+  <blockquote class="blockquote-footer">인용문</blockquote>
+  <blockquote class="blockquote">인용문</blockquote>
+
+  <dl>
+    <dt>제목</dt>
+    <dd>내용</dd>
+  </dl>
+
+  <p>텍스트의 중요도에 따라 문자 색상을 다르게 표시할 수 있다.</p>
+  <p class="text-primary">Primary</p>
+  <p class="text-secondary">Secondary</p>
+  <p class="text-success">Success</p>
+  <p class="text-danger">Danger</p>
+  <p class="text-warning">Warning</p>
+  <p class="text-info">Info</p>
+  <p class="text-light bg-dark">Light</p>
+  <p class="text-dark">Dark</p>
+  <p class="text-muted">Muted</p>
+  <p class="text-white bg-dark">White</p>
+  <p class="text-body">Body (body태그 설정값)</p>
+  <p class="text-black-50">Black-50 (opacity 50%)</p>
+  <p class="text-white-50 bg-dark">White-50 (opacity 50%)</p>
+
+
+  <p>
+    <code>.lead</code> : 글자 크기를 크게 한다.
+  </p>
+  <p class="lead">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus modi aspernatur nemo. Ut, rerum nihil aut illo sapiente neque repellat eos necessitatibus dolor eligendi aperiam, quisquam nobis natus. Dolorum, hic?
+  </p>
+  <p>
+    <code>.small</code> : 글자 크기를 85% 크기로 줄인다.
+  </p>
+  <p class="small">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus modi aspernatur nemo. Ut, rerum nihil aut illo sapiente neque repellat eos necessitatibus dolor eligendi aperiam, quisquam nobis natus. Dolorum, hic?
+  </p>
+  <p>
+    <code>.text-start</code> : 글자를 왼쪽 정렬한다.
+  </p>
+  <p class="text-start">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus modi aspernatur nemo. Ut, rerum nihil aut illo sapiente neque repellat eos necessitatibus dolor eligendi aperiam, quisquam nobis natus. Dolorum, hic?
+  </p>
+  <p>
+    <code>.text-center</code> : 글자를 가운데 정렬한다.
+  </p>
+  <p class="text-center">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus modi aspernatur nemo. Ut, rerum nihil aut illo sapiente neque repellat eos necessitatibus dolor eligendi aperiam, quisquam nobis natus. Dolorum, hic?
+  </p>
+  <p>
+    <code>.text-end</code> : 글자를 오른쪽 정렬한다.
+  </p>
+  <p class="text-end">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus modi aspernatur nemo. Ut, rerum nihil aut illo sapiente neque repellat eos necessitatibus dolor eligendi aperiam, quisquam nobis natus. Dolorum, hic?
+  </p>
+  <p>
+    <code>.text-justify</code> : 글자를 양쪽 정렬한다.
+  </p>
+  <p class="text-justify">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus modi aspernatur nemo. Ut, rerum nihil aut illo sapiente neque repellat eos necessitatibus dolor eligendi aperiam, quisquam nobis natus. Dolorum, hic?
+  </p>
+  <p>
+    <code>.text-nowrap</code> : 글자를 줄바꿈하지 않는다.
+  </p>
+  <p class="text-nowrap">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus modi aspernatur nemo. Ut, rerum nihil aut illo sapiente neque repellat eos necessitatibus dolor eligendi aperiam, quisquam nobis natus. Dolorum, hic?
+  </p>
+  <p>
+    <code>.text-lowercase</code> : 글자를 소문자로 변환한다.
+  </p>
+  <p class="text-lowercase">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus modi aspernatur nemo. Ut, rerum nihil aut illo sapiente neque repellat eos necessitatibus dolor eligendi aperiam, quisquam nobis natus. Dolorum, hic?
+  </p>
+  <p>
+    <code>.text-uppercase</code> : 글자를 대문자로 변환한다.
+  </p>
+  <p class="text-uppercase">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus modi aspernatur nemo. Ut, rerum nihil aut illo sapiente neque repellat eos necessitatibus dolor eligendi aperiam, quisquam nobis natus. Dolorum, hic?
+  </p>
+  <p>
+    <code>.text-capitalize</code> : 글자를 대문자로 변환한다.
+  </p>
+  <p class="text-capitalize">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus modi aspernatur nemo. Ut, rerum nihil aut illo sapiente neque repellat eos necessitatibus dolor eligendi aperiam, quisquam nobis natus. Dolorum, hic?
+  </p>
+  <p>
+    <code>.text-muted</code> : 글자를 회색으로 변환한다.
+  </p>
+  <p class="text-muted">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus modi aspernatur nemo. Ut, rerum nihil aut illo sapiente neque repellat eos necessitatibus dolor eligendi aperiam, quisquam nobis natus. Dolorum, hic?
+  </p>
+
+  <p>
+    <code>.list-unstyled</code> : 목록 앞에 기호 숨기기
+  </p>
+  <ul class="list-inline">
+    <li class="list-inline-item">1</li>
+    <li class="list-inline-item">2</li>
+    <li class="list-inline-item">3</li>
+  </ul>
+
+  <dl class="d-flex">
+    <dt>한줄로 정리하는 방법</dt>
+    <dd>flex</dd>
+    <dd>float</dd>
+    <dd>grid</dd>
+    <dd>inline-block</dd>
+    <dd>inline</dd>
+  </dl>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+{ "data" :
+[
+{"num":"1","name":"안성탕면","company":"농심","kind":"M","price":"700","e_date":"20131016"},
+{"num":"2","name":"김치라면","company":"삼양","kind":"M","price":"700","e_date":"20131016"},
+{"num":"3","name":"진라면","company":"오뚜기","kind":"C","price":"800","e_date":"20131016"},
+{"num":"4","name":"꼬꼬면","company":"팔도","kind":"C","price":"1000","e_date":"20131016"},
+{"num":"5","name":"신라면","company":"농심","kind":"C","price":"1100","e_date":"20131016"},
+{"num":"6","name":"삼양라면","company":"삼양","kind":"M","price":"700","e_date":"20131016"},
+{"num":"7","name":"너구리","company":"농심","kind":"M","price":"850","e_date":"20131016"},
+{"num":"8","name":"나가사키짬뽕","company":"삼양","kind":"C","price":"1300","e_date":"20131016"},
+{"num":"9","name":"짜파게티","company":"농심","kind":"C","price":"1200","e_date":"20131016"},
+{"num":"10","name":"왕짜장면","company":"팔도","kind":"C","price":"1500","e_date":"20231112"},
+{"num":"11","name":"왕뚜껑","company":"팔도","kind":"C","price":"1900","e_date":"20231111"},
+{"num":"12","name":"신라면블랙","company":"농심","kind":"C","price":"2400","e_date":"20231111"},
+{"num":"13","name":"비빔면","company":"팔도","kind":"C","price":"1300","e_date":"20231211"},
+{"num":"14","name":"유부우동","company":"참맛","kind":"C","price":"1200","e_date":"20221223"},
+{"num":"15","name":"비빔면","company":"팔도","kind":"M","price":"980","e_date":"20230403"},
+{"num":"16","name":"생생우동","company":"농심","kind":"C","price":"2000","e_date":"20231111"},
+{"num":"17","name":"생생우동","company":"농심","kind":"C","price":"2100","e_date":"20221220"},
+{"num":"18","name":"왕뚜껑","company":"팔도","kind":"M","price":"1500","e_date":"20220202"}
+]
+}

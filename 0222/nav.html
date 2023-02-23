@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <title>부트스트랩 네비게이션</title>
+</head>
+<body>
+  <h2>부트스트랩 페이지 네비게이션</h3>
+  <p>페이지 네이션은 페이지수를 표시하는 숫자와 이전, 다음 버튼을 만들고자 할 때 사용한다.</p>
+  <p>큰 블록의 링크를 사용하고 있어서, 넓은 클릭 영역을 제공하면서 쉽게 확장할 수 있다. 목록의 HTML요소로 구성되며 스크린 리더는 이용가능한 링크의 수를 알려 줄  수 있다. <code>nav</code>태그를 사용해 스크린 리더나 기타 지원 기술에서 내비게이션 영역으로 식별하게 도와준다.</p>
+  <p>페이지에서는 여러 개의 내비게이션 영역이 존재할 가능성이 높기 때문에 <code>nav</code>에 aria-label을 붙이는 것을 권장한다.</p>
+
+  <h3>1. 페이지 번호 표시하기</h3>
+  <nav aria-label="페이지 내비게이션1">
+    <ul class="pagination">
+      <li class="page-item"><a href="#" title="#" class="page-link">prev</a></li>
+      <li class="page-item"><a href="#" title="#" class="page-link">1</a></li>
+      <li class="page-item"><a href="#" title="#" class="page-link">2</a></li>
+      <li class="page-item"><a href="#" title="#" class="page-link">3</a></li>
+      <li class="page-item"><a href="#" title="#" class="page-link">4</a></li>
+      <li class="page-item"><a href="#" title="#" class="page-link">5</a></li>
+      <li class="page-item"><a href="#" title="#" class="page-link">next</a></li>
+    </ul>  
+  </nav>
+<p><code>.pagination, .page-item, .page-link</code> 클래스명 사용.</p>
+
+<h3>2. 이전, 다음 아이콘으로 표시하기</h3>
+<nav aria-label="페이지 내비게이션2">
+  <ul class="pagination">
+    <li class="page-item"><a href="#" title="#" class="page-link"><i class="bi bi-chevron-left"></i></a></li>
+    <li class="page-item"><a href="#" title="#" class="page-link">1</a></li>
+    <li class="page-item"><a href="#" title="#" class="page-link">2</a></li>
+    <li class="page-item"><a href="#" title="#" class="page-link">3</a></li>
+    <li class="page-item"><a href="#" title="#" class="page-link">4</a></li>
+    <li class="page-item"><a href="#" title="#" class="page-link">5</a></li>
+    <li class="page-item"><a href="#" title="#" class="page-link"><i class="bi bi-chevron-right"></i></a></li>
+  </ul>  
+</nav>
+
+
+
+<h3>3. 선택한 요소에 서식 적용하기</h3>
+<p>사용자가 페이지 번호를 클릭시 해당 페이지가 나왔을 때 해당번호가 선택된 것처럼 서식을 적용하기 위해 사용한다.</p>
+<p><code>li class="active"</code></p>
+
+<h3>4. 버튼 비활성화 하기</h3>
+<p>첫번째 페이지에서는 이전이 안눌러지고, 마지막 페이지에서 다음 버튼이 클릭이 되지 않게 하기 위해 버튼을 비활성화 해야한다.</p>
+<p><code>li class="disabled"</code></p>
+<nav aria-label="페이지 내비게이션3">
+  <ul class="pagination">
+    <li class="page-item disabled">
+      <a href="#" title="#" class="page-link" aria-label="previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li class="page-item"><a href="#" title="#" class="page-link active">1</a></li>
+    <li class="page-item"><a href="#" title="#" class="page-link">2</a></li>
+    <li class="page-item"><a href="#" title="#" class="page-link">3</a></li>
+    <li class="page-item"><a href="#" title="#" class="page-link">4</a></li>
+    <li class="page-item"><a href="#" title="#" class="page-link">5</a></li>
+    <li class="page-item">
+      <a href="#" title="#" class="page-link" aria-label="next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>  
+</nav>
+
+<h3>5. 버튼의 크기 지정하기.</h3>
+<p>버튼의 크기를 조정하고자 할 때는 <code>.pagenation-lg</code>나 <code>.pagination-sm</code>을 추가하면 된다.</p>
+
+<h3>6. 페이지네이션 정렬하기</h3>
+<p>ul 태그에 <code>.justify-content-center, .justify-content-end</code>를 사용하면 된다.</p>
+<nav aria-label="페이지 내비게이션4">
+  <ul class="pagination justify-content-center">
+    <li class="page-item disabled">
+      <a href="#" title="#" class="page-link" aria-label="previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li class="page-item"><a href="#" title="#" class="page-link active">1</a></li>
+    <li class="page-item"><a href="#" title="#" class="page-link">2</a></li>
+    <li class="page-item"><a href="#" title="#" class="page-link">3</a></li>
+    <li class="page-item"><a href="#" title="#" class="page-link">4</a></li>
+    <li class="page-item"><a href="#" title="#" class="page-link">5</a></li>
+    <li class="page-item">
+      <a href="#" title="#" class="page-link" aria-label="next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>  
+</nav>
+</body>
+</html>

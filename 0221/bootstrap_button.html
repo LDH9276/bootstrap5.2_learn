@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>버튼과 버튼그룹</title>
+  <link rel="stylesheet" href="../css/bootstrap.css">
+</head>
+<body>
+  <h2>부트스트랩 버튼과 버튼 그룹</h2>
+
+  <ul>
+    <li>class = 'btn'</li>
+    <li>class = 'btn btn-dark'</li>
+    <li>class = 'btn btn-light'</li>
+    <li>class = 'btn btn-default'</li>
+    <li>class = 'btn btn-primary'</li>
+    <li>class = 'btn btn-success'</li>
+    <li>class = 'btn btn-info'</li>
+    <li>class = 'btn btn-wraning'</li>
+    <li>class = 'btn btn-danger'</li>
+    <li>class = 'btn btn-link'</li>
+  </ul>
+
+  <button type="button" class="btn btn-dark">기본 버튼</button>
+  <button type="button" class="btn btn-light">기본 버튼</button>
+  <button type="button" class="btn btn-default">기본 버튼</button>
+  <button type="button" class="btn btn-primary">주요 버튼</button>
+  <button type="button" class="btn btn-success">성공 버튼</button>
+  <button type="button" class="btn btn-info">정보 버튼</button>
+  <button type="button" class="btn btn-warning">경고 버튼</button>
+  <button type="button" class="btn btn-danger">경고 버튼</button>
+  <button type="button" class="btn btn-link">링크 버튼</button>
+
+  <p>btn 클래스는 button, input, a 태그 모두 적용이 가능하다.</p>
+
+  <p>btn 클래스의 외각선 적용은 <code>btn-outline-</code>으로 적용이 가능하다.</p>
+  <button type="button" class="btn btn-outline-danger">경고 버튼</button>
+
+  <p>버튼 크기 지정하기 <code>.btn-lg, .btn-sm</code></p>
+
+  <button type="button" class="btn btn-sm btn-outline-danger">small 버튼</button>
+  <button type="button" class="btn btn-lg btn-outline-danger">large 버튼</button>
+
+  <h3>a요소 비활성화</h3>
+  <p>a 요소에 비활성화 할때는 href 속성을 제거하고 disabled 속성을 넣어준다.</p>
+
+  <a href="#" class="btn btn-primary">Primary</a>
+
+  <a class="btn btn-primary disabled">Primary</a>
+
+  <h3>버튼 블록</h3>
+  <p>버튼을 블록 요소처럼 사용하고 싶을때는 <code>.btn-block</code> 클래스를 사용한다.</p>
+
+  <div class="d-grid gap-2">
+    <button type="button" class="btn btn-primary btn-block">Primary</button>
+    <button type="button" class="btn btn-primary btn-block">Primary</button>
+  </div>
+  
+  <h3>버튼 그룹</h3>
+  <p>버튼을 그룹으로 묶어서 사용하고 싶을때는 <code>.btn-group</code> 클래스를 사용한다.</p>
+
+  <p>예시</p>
+  <div class="btn-group">
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-primary">Primary</button>
+  </div>
+
+  <p>첫번째 버튼만 활성화하기</p>
+  <div class="btn-group">
+    <button type="button" class="btn btn-primary active" aria-current="page">Primary</button>
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-primary">Primary</button>
+  </div>
+
+  <p>버튼 그룹에 아웃라인 활성화</p>
+  <div class="btn-group" role="group" aria-label="Basic outlined example">
+    <button type="button" class="btn btn-outline-primary" aria-current="page">Primary</button>
+    <button type="button" class="btn btn-outline-primary">Primary</button>
+    <button type="button" class="btn btn-outline-primary">Primary</button>
+  </div>
+
+
+</body>
+</html>
