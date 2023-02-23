@@ -13,6 +13,35 @@
       max-width: 1200px;
       margin-top: 50px;
     }
+    .s-box *{
+      font-size: 14px;
+      box-sizing: border-box;
+    }
+    .s-box{
+      max-width: 800px;
+      height: 30px;
+    }
+    .form-select{
+      padding: 0 15px;
+      box-sizing: border-box;
+    }
+    .s-box .btn{
+      padding: 0px 10px;
+    }
+    .radio{
+      width: 150px !important;
+      display: flex;
+      height: 30px;
+    }
+    .s-box .form-check-input{
+      float: none;
+    }
+    .s-box .form-check-label{
+      display: inline-block;
+      line-height: 30px;
+      vertical-align: middle;
+      margin: 0;
+    }
   </style>
 </head>
 <body>
@@ -96,7 +125,7 @@
 
     </div>
 
-    <div class="col-md-9 col-12 mx-auto d-flex">
+    <div class="col-md-12 col-12 mx-auto d-flex s-box">
 
       <select name="b-type" id="b-type" class="form-select w-25 me-3">
         <option value="제목">제목</option>
@@ -109,7 +138,7 @@
       <button type="submit" class="btn btn-primary"><i class="bi bi-search"></i> 검색</button>
       </div>
 
-      <div class="input-group w-25 h-100 py-2">
+      <div class="input-group radio">
         <div class="form-check me-3">
           <input type="radio" name="b-search-len" id="b-and" class="form-check-input" checked>
           <label for="b-and" class="form-check-label">and</label>  
