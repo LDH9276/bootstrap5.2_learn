@@ -1,19 +1,111 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/bootstrap.css">
-  <title>부트스트랩 학습 목록</title>
-</head>
-<body>
-  <h1> </h1>
-  <div class="row">
-    <div class="col-12 bg-light">부트스트랩 1일차</div>
-    <div class="col-12">부트스트랩이란 무엇인가?</div>
-    <div class="col-12">부트스트랩 2일차</div> 
-  </div>
-  
-</body>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>반응형 프레임워크 부트스트랩</title>
+      <style>
+        *{margin:0px;padding:0px;}
+        body{
+          font-family: "맑은 고딕",arial,sans-serif;
+          font-size:12px;
+          color:#333;
+          background:rgb(246, 246, 246);
+        }
+        h1, h2{ text-align:center;}
+        h1 img{width:160px; margin-top: 40px;}
+        h2{line-height:40px;}
+
+        /* 테두리 선 */
+        .border01{
+          border-top:3px solid #5f3fff;
+          border-bottom:3px solid #5f3fff;
+        }
+        /* 제목 배경 */
+        .bgcolor01{background:#5f3fff;}
+        dl{text-indent:10px;}
+        dt{
+          font-size:14px;
+          color:#fff;
+          padding:12px 0px;
+          font-weight: bold;
+          border-bottom:1px solid #ffffff;
+        }
+        dd{ 
+          border-bottom:1px solid #cccccc;
+          text-indent:16px;
+        }
+        dd > a{
+          display:block;
+          font-size:13px;
+          line-height:40px;
+          color:#333333;
+          text-decoration:none;
+        }
+        dd > a:hover{
+          background-color:beige;
+        }
+        footer{
+          background-color:#5f5e5e;
+          color:#ffffff;
+          text-align:center;
+          line-height:50px;
+        }
+        footer > address{font-style:normal;}
+      </style>
+    </head>
+    <body>
+      <header>
+      <h1><a href="index.html" title="처음으로 바로가기">
+        <img src="logo.svg" alt="부트스트랩"></a></h1>
+      </header>
+
+      <main>
+        <h2>반응형 프레임워크, 부트스트랩 실습</h2>
+        <section class="border01">
+          <dl>
+            <dt class="bgcolor01">부트스트랩 1일차</dt>
+            <dd><a href="./0214/bootstrap.html" title="부트스트랩 기초">부트스트랩 기초</a></dd>
+          </dl>
+
+          <dl>
+            <dt class="bgcolor01">부트스트랩 2일차</dt>
+            <dd><a href="./0215/noodle.html" title="json을 활용한 라면 데이터테이블 출력">json을 활용한 라면 데이터테이블 출력</a></dd>
+            <dd><a href="./0215/movie.html" title="open api를 활용한 영화 관람데이터 출력">open api를 활용한 영화 관람데이터 출력</a></dd>
+          </dl>
+
+          <dl>
+            <dt class="bgcolor01">부트스트랩 3일차</dt>
+            <dd><a href="./0220/bootstrap_paragraph.html" title="부트스트랩 문장 / 문단">부트스트랩 문장 / 문단</a></dd>
+            <dd><a href="./0220/bootstrap_image.html" title="부트스트랩 이미지">부트스트랩 이미지</a></dd>
+            <dd><a href="./0220/bootstrap_table.html" title="부트스트랩 테이블">부트스트랩 테이블</a></dd>
+            <dd><a href="./0220/bootstrap_grid.html" title="부트스트랩 그리드">부트스트랩 그리드</a></dd>
+            <dd><a href="./0220/bootstrap_gall1.html" title="실습예제 : 부트스트랩을 활용한 갤러리">실습예제 : 부트스트랩을 활용한 갤러리</a></dd>
+          </dl>
+
+          <dl>
+            <dt class="bgcolor01">부트스트랩 4일차</dt>
+            <dd><a href="./0221/jumbotron.html" title="부트스트랩 점보트론">부트스트랩 점보트론</a></dd>
+            <dd><a href="./0221/bootstrap_button.html" title="부트스트랩 버튼">부트스트랩 버튼</a></dd>
+            <dd><a href="./0221/bootstrap_warn.html" title="부트스트랩 경고메시지">부트스트랩 경고메시지</a></dd>
+            <dd><a href="./0221/bootstrap-exam1.html" title="실습예제 : 부트스트랩을 활용한 로그인 폼">실습예제 : 부트스트랩을 활용한 로그인 폼</a></dd>
+          </dl>
+
+          <dl>
+            <dt class="bgcolor01">부트스트랩 5일차</dt>
+            <dd><a href="./0222/icon.html" title="부트스트랩 아이콘">부트스트랩 아이콘</a></dd>
+            <dd><a href="./0222/badge.html" title="부트스트랩 배지">부트스트랩 배지</a></dd>
+            <dd><a href="./0222/nav.html" title="부트스트랩 네비게이션">부트스트랩 네비게이션</a></dd>
+            <dd><a href="./0222/prograssbar.html" title="부트스트랩 진행바">부트스트랩 진행바 (프로그래스바)</a></dd>
+            <dd><a href="./0222/exam.html" title="실습예제 : 부트스트랩을 활용한 게시판">실습예제 : 부트스트랩을 활용한 게시판</a></dd>
+          </dl>
+
+        </section>
+        
+      </main>
+
+      <footer>
+        <address>Copyright&copy;2022 이동헌 부트스트랩 학습페이지 allrights reserved.</address>
+      </footer>
+    </body>
 </html>
